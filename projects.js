@@ -7,6 +7,22 @@ async function initProjects() {
   contents.innerHTML = projectText;
 }
 
+async function openTags(obj) {
+  console.log(`${obj.id} clicked`);
+  const contents = document.getElementById("tag-section");
+    loadTags();
+}
+
+async function closeTags(obj) {
+  console.log(`${obj.id} clicked`);
+  const tags = document.getElementById("tag-section");
+  //remove contents HTML
+  tags.innerHTML = `<span class="project-tag" id="search-tag" onclick="openTags(this)">Open Tags Search</span>`;
+  selectedTags = [];  //clear selected tags
+  const contents = document.getElementById("project");
+  contents.innerHTML = await loadProject(selectedTags);
+}
+
 async function loadTags(){
   const response = await fetch(projectList);
   if (!response.ok) throw new Error(`Failed to fetch projectList: ${response.statusText}`);
@@ -19,7 +35,7 @@ async function loadTags(){
     });
   });
   //print tags into html
-  let tagHTML = ``;
+  let tagHTML = `<span class="project-tag search-selected bg-red-500 text-white" id="search-tag" onclick="closeTags(this)">Close Tags Search</span>`;
   tags.forEach((tag) => {
     tagHTML += `<span class="project-tag" id="${tag}" onclick="tagClick(this)">${tag}</span>`;
   });
@@ -28,9 +44,8 @@ async function loadTags(){
 }
 
 async function tagClick(obj){
-  console.log(`${obj} clicked`);
+  console.log(`${obj.id} clicked`);
   const tag = obj.id;
-  console.log(tag);
   //if tag has not been selected, ad it
   if(!obj.classList.contains("tag-selected")){
     selectedTags.push(tag); //add tag to selectedTags
@@ -97,10 +112,9 @@ async function loadProject(selectedTags) {
     projectHTML += `</div>`;
     projectHTML += `</div>`;
   });
-
+  if(!projectHTML) return `<h2 class="text-2xl font-bold py-5">No projects found</h2>`;
   return projectHTML;
 }
 
 initProjects();
-loadTags();
 
