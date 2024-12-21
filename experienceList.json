@@ -1,0 +1,55 @@
+{
+    "experiences": [
+    {
+        "id": "tutor",
+        "imgSrc": "exp/tutor.png",
+        "altText": "tutor",
+        "title": "Math Tutor",
+        "company": "Freelance",
+        "time": "June 2024 - Present",
+        "description": [
+            "Tutoring primary and secondary students online with personalized lesson plans. From teaching basic classroom lesson to tutoring students for competitive secondary high schools."
+        ]
+    },{
+        "id": "hex2dec",
+        "imgSrc": "exp/hex2dec.png",
+        "altText": "hex2dec",
+        "title": "Portfolio Advising",
+        "company": "Hex2Dec",
+        "time": "April 2024 - Present",
+        "description": [
+            "Advicing high school students on their portfolio for University both in Thailand and abroad"
+        ]
+    },{
+        "id": "student",
+        "imgSrc": "exp/student.png",
+        "altText": "student committee",
+        "title": "Class Representative of Student Committee",
+        "company": "Darunsikkhalai School",
+        "time": "August 2023 - March 2024",
+        "description": [
+            "Participated in student council meetings and communicating information though class as well as organized school events such as Loy Krathong Festival"
+        ]
+    },{
+        "id": "camp",
+        "imgSrc": "exp/camp.png",
+        "altText": "camp",
+        "title": "President of Academic Camp",
+        "company": "Darunsikkhalai School",
+        "description": [
+            "Designed and directed the overall flow of STEM academic activities for 140 5th graders at Wat Thakam School in a one-day camp.",
+            "Created a technology activities based on AI as well and run a workshop for the kids."
+        ]
+    },{
+        "id": "stage",
+        "imgSrc": "exp/stage.png",
+        "altText": "stage",
+        "title": "Head of Stage",
+        "company": "Darunsikkhalai School Open House 2024",
+        "description": [
+            "Advicing high school students on their portfolio for University both in Thailand and abroad"
+        ]
+    }
+
+]
+}

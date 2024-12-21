@@ -29,7 +29,7 @@ async function loadProject() {
     //text section
     projectHTML += `<h2 class="text-2xl font-bold py-5">${proj.title}</h2>`;
     proj.description.forEach((desc) => {
-      projectHTML += `<p>${desc}</p>`;
+      projectHTML += `<p class="py-2">${desc}</p>`;
     });
 
     //buttons
