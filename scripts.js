@@ -14,43 +14,29 @@ async function loadProject() {
   let projectHTML = '';
 
   data.project.forEach((proj) => {
-    // Start project section
     projectHTML += `<div class="project-section" id="${proj.id}">`;
-    
-    // Add project image
     projectHTML += `<img src="${proj.imgSrc}" alt="${proj.altText}" class="project-image">`;
-    
-    // Start text section
     projectHTML += `<div class="project-text">`;
 
-    // Add tags
-    projectHTML += `<div class="project-tags">`;
+    //tags
+    projectHTML += `<div>`;
     proj.tags.forEach((tag) => {
       projectHTML += `<span class="project-tag">${tag}</span>`;
     });
     projectHTML += `</div>`;
 
-    // Add project title
-    projectHTML += `<h2 class="text-2xl font-bold">${proj.title}</h2>`;
+    projectHTML += `<h2 class="text-2xl font-bold py-5">${proj.title}</h2>`;
 
-    // Add project description
     proj.description.forEach((desc) => {
       projectHTML += `<p>${desc}</p>`;
     });
 
-    // Add buttons
-    if (proj.buttons && proj.buttons.length > 0) {
-      projectHTML += `<div class="project-buttons">`;
-      proj.buttons.forEach((button) => {
-        projectHTML += `<a href="${button.buttonLink}" class="button" target="_blank">${button.buttonText}</a>`;
-      });
-      projectHTML += `</div>`;
-    }
-
-    // Close text section
+    projectHTML += `<div class="flex flex-wrap">`;
+    proj.buttons.forEach((button) => {
+      projectHTML += `<a href="${button.buttonLink}" class="w-5/10 bg-black text-white p-2 my-4 mr-4 text-lg transition-colors duration-300 hover:bg-blue-500" target="_blank">${button.buttonText}</a>`;
+    });
     projectHTML += `</div>`;
-    
-    // Close project section
+    projectHTML += `</div>`;
     projectHTML += `</div>`;
   });
 
