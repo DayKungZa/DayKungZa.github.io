@@ -21,26 +21,31 @@ async function loadTags(){
   //print tags into html
   let tagHTML = ``;
   tags.forEach((tag) => {
-    tagHTML += `<span class="project-tag" id="${tag}" onclick="tagClick('this')">${tag}</span>`;
+    tagHTML += `<span class="project-tag" id="${tag}" onclick="tagClick(this)">${tag}</span>`;
   });
   const tagInsert = document.getElementById("tag-section");
   tagInsert.innerHTML = tagHTML;
 }
 
-async function tagClick(obj, tag){
-  console.log(`${tag} clicked`);
-
-
-  //if tag has class tag-selected, remove it
-  if(tag.classList.contains("tag-selected")){
-    selectedTags = selectedTags.filter((item) => item !== tag); //remove tag from selectedTags
-    //remove class from tag if deselected
-    obj.classList.remove("tag-selected");
-
-  } else {
+async function tagClick(obj){
+  console.log(`${obj} clicked`);
+  const tag = obj.id;
+  console.log(tag);
+  //if tag has not been selected, ad it
+  if(!obj.classList.contains("tag-selected")){
     selectedTags.push(tag); //add tag to selectedTags
+
     //add class to tag if selected
     obj.classList.add("tag-selected");
+    obj.classList.add("bg-blue-500");
+    obj.classList.add("text-white");
+  } else {
+    selectedTags = selectedTags.filter((item) => item !== tag); //remove tag from selectedTags
+
+    //remove class from tag if deselected
+    obj.classList.remove("tag-selected");
+    obj.classList.remove("bg-blue-500");
+    obj.classList.remove("text-white");
   }
   const contents = document.getElementById("project");
   contents.innerHTML = await loadProject(selectedTags);
@@ -56,13 +61,13 @@ async function loadProject(selectedTags) {
   data.project.forEach((proj) => {
     //check if there are selected tags
     if (selectedTags && selectedTags.length > 0) {
-      let found = false;
+      let found = true;
       selectedTags.forEach((tag) => {
-        if (proj.tags.includes(tag)) {
-          found = true;
+        if (!proj.tags.includes(tag)) {
+          found = false;
         }
       });
-      //if not foung, skip this project
+      //if not found, skip this project
       if (!found) return;
     }
     console.log(proj.id);
