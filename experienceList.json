@@ -12,7 +12,7 @@
         ]
     },{
         "id": "hex2dec",
-        "imgSrc": "exp/hex2dec.png",
+        "imgSrc": "exp/hex2dec.jpg",
         "altText": "hex2dec",
         "title": "Portfolio Advising",
         "company": "Hex2Dec",
@@ -36,6 +36,7 @@
         "altText": "camp",
         "title": "President of Academic Camp",
         "company": "Darunsikkhalai School",
+        "time": "January 2024",
         "description": [
             "Designed and directed the overall flow of STEM academic activities for 140 5th graders at Wat Thakam School in a one-day camp.",
             "Created a technology activities based on AI as well and run a workshop for the kids."
@@ -46,8 +47,9 @@
         "altText": "stage",
         "title": "Head of Stage",
         "company": "Darunsikkhalai School Open House 2024",
+        "time": "January 2024",
         "description": [
-            "Advicing high school students on their portfolio for University both in Thailand and abroad"
+            "Planned and organized the stage performance for the school open house event and contacted the musicians dancers and MC."
         ]
     }
 
