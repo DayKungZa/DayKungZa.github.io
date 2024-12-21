@@ -112,18 +112,20 @@
             }
         ]
     },{ 
-        "id": "marioparty",
-        "imgSrc": "projects/marioparty.png",
-        "altText": "Game Screenshot",
-        "tags": ["game dev", "c++"],
-        "title": "Mario Party in C",
+        "id": "Teetawarn",
+        "imgSrc": "projects/teetawarn.png",
+        "altText": "Youtube Channel Screenshot",
+        "tags": ["youtube", "video editing", "animation"],
+        "title": "Teetawarn Co.",
         "description": [
-            "Recreating Mario Party game in C language, using only standard library and played in terminal."
+            "My passion project in 2020-2022. A Youtube animation channel that tells the story of Teetawarn and his adventures.",
+            "In this channel, I made the story, music, drawings, voice, and animations. From the comic books I used to draw in primary and middle school, adapted into animation in the style of png moving around using Premiere Pro.",
+            "This channel inspired my Passion to Create entertaining content but discontinued due to my new interests in programming. Maybe I will come back to it someday..."
         ],
         "buttons": [
             {
-                "buttonText": "Source Code and Documentation",
-                "buttonLink": "https://github.com/DayKungZa/mariopartyc"
+                "buttonText": "Youtube Channel",
+                "buttonLink": "https://www.youtube.com/channel/UCPU6-NdIKoM6P9HRQ2YA4qg"
             }
         ]
     }
