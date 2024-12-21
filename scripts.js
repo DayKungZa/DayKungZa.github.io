@@ -1,71 +1,34 @@
-const textID = "content";
-const topics = "https://raw.githubusercontent.com/DayKungZa/reviews/main/topics.json";
-let clicked = false;
-let headerFooterText = ''; 
+const projectList = "https://raw.githubusercontent.com/DayKungZa/DayKungZa.github.io/refs/heads/main/projectList";
 
 async function initProjects() {
-  headerFooterText = await loadProjects();
+  let projectText = await loadProject();
+  const contents = document.getElementById("project");
+  contents.innerHTML = projectText;
 }
 initProjects();
 
 async function loadProject() {
-    const response = await fetch(projectList);
-}
+  const response = await fetch(projectList);
+  if (!response.ok) throw new Error(`Failed to fetch projectList: ${response.statusText}`);
 
-fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
-    const project = data.project;
-
-    // Get reference to the container where the HTML will be added
-    const container = document.querySelector('body');
-
-    // Create the project section dynamically
-    const projectSection = document.createElement('div');
-    projectSection.className = 'project-section';
-    projectSection.id = project.id;
-
-    // Add image
-    const img = document.createElement('img');
-    img.src = project.imgSrc;
-    img.alt = project.altText;
-    projectSection.appendChild(img);
-
-    // Add text container
-    const projectText = document.createElement('div');
-    projectText.className = 'project-text';
-
-    // Add tags
-    const tags = document.createElement('span');
-    tags.textContent = project.tags;
-    projectText.appendChild(tags);
-
-    // Add title
-    const title = document.createElement('h2');
-    title.textContent = project.title;
-    projectText.appendChild(title);
-
-    // Add description
-    const description = document.createElement('p');
-    project.description.forEach(line => {
-      const textLine = document.createTextNode(line);
-      description.appendChild(textLine);
-      description.appendChild(document.createElement('br'));
+  const data = await response.json();
+  let projectHTML = '';
+  data.project.forEach(proj => {
+    projectHTML += `<div class="project-section" id="${proj.id}">`;
+    projectHTML += `<img src="${proj.imgSrc}" alt="${proj.altText}">`;
+    projectHTML += `<div class="project-text">`;
+    proj.tags.forEach(tag => {
+      projectHTML += `<span class="project-tag">${tag}</span>`;
     });
-    projectText.appendChild(description);
-
-    // Add button
-    const button = document.createElement('a');
-    button.href = project.buttonLink;
-    button.className = 'button';
-    button.target = '_blank';
-    button.textContent = project.buttonText;
-    projectText.appendChild(button);
-
-    // Append text container to project section
-    projectSection.appendChild(projectText);
-
-    // Append the entire project section to the container
-    container.appendChild(projectSection);
-  })
-  .catch(error => console.error('Error loading project data:', error));
+    projectHTML += `<h2 class="text-2xl bold">${proj.title}</h2>`;
+    proj.description.forEach(desc => {
+      projectHTML += `<p>${desc}</p>`;
+    });
+    proj.buttons.forEach(button => {
+      projectHTML += `<a href="${button.buttonLink}" class="button" target="_blank">${button.buttonText}</a>`;
+    });
+    projectHTML += `</div>`;
+    projectHTML += `</div>`;
+  });
+  return projectHTML;
+}
