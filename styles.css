@@ -161,6 +161,10 @@ body {
   font-weight: bold;
   white-space: nowrap;
 }
+.selected-tag {
+  background-color: #005aba;
+  color: white;
+}
 
 .project-text{
   margin: 10px;
