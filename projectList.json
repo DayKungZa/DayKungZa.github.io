@@ -4,7 +4,7 @@
         "id": "robotsim",
         "imgSrc": "projects/robotsim_profile1.png",
         "altText": "Screenshot of Robot Simulation Tutorial",
-        "tags": ["web dev", "game dev", "robotics", "unity", "c#", "html/css"],
+        "tags": ["web-dev", "game-dev", "simulation", "robotics", "unity", "c#", "html-css"],
         "title": "Robot Simulation Tutorial on Web",
         "description": [
             "<b>Silver Prize in Oral Presentation, SCiUS Forum 13th</b>",
@@ -33,7 +33,7 @@
         "id": "review",
         "imgSrc": "projects/review.png",
         "altText": "Screenshot of Day Reviews website",
-        "tags": ["web dev", "html/css", "js", "marked.js"],
+        "tags": ["web-dev", "html-css", "js", "marked.js"],
         "title": "Day Reviews",
         "description": [
             "I like to review games, movies, shows, and other stuff so these are the websites for my reviews. Using marked.js with markdown and JSON files to store and fetch data of my reviews."
@@ -52,7 +52,7 @@
         "id": "fireemblem",
         "imgSrc": "projects/fireemblem.png",
         "altText": "Fire Emblem Echoes Screenshot",
-        "tags": ["python", "monte carlo", "data analysis"],
+        "tags": ["python", "simulation", "data-analysis"],
         "title": "Fire Emblem Project",
         "description": [
             "This project uses Monte Carlo simulations to analyze battle mechanics in Fire Emblem Echoes. Simulating battles based on character statistics, to find the best character and classes."
@@ -85,7 +85,7 @@
         "id": "bullethell",
         "imgSrc": "projects/bullethell.png",
         "altText": "Game Screenshot",
-        "tags": ["game dev", "unity", "c#"],
+        "tags": ["game-dev", "unity", "c#"],
         "title": "Bullet-hell Farming",
         "description": [
             "a short farming game combined with bullet hell features, developed in Unity."
@@ -100,7 +100,7 @@
         "id": "marioparty",
         "imgSrc": "projects/marioparty.png",
         "altText": "Game Screenshot",
-        "tags": ["game dev", "c++"],
+        "tags": ["game-dev", "c++"],
         "title": "Mario Party in C",
         "description": [
             "Recreating Mario Party game in C language, using only standard library and terminal."
@@ -115,7 +115,7 @@
         "id": "octoflippers",
         "imgSrc": "projects/octoflippers.png",
         "altText": "Game Screenshot",
-        "tags": ["game dev", "godot", "gdscript"],
+        "tags": ["game-dev", "godot", "gdscript", "animation"],
         "title": "Octo Flippers",
         "description": [
             "a 2D platformer game feturing an octopus with an ability to flip and change skills, currently under development in Godot."
@@ -125,7 +125,7 @@
         "id": "Teetawarn",
         "imgSrc": "projects/teetawarn.png",
         "altText": "Youtube Channel Screenshot",
-        "tags": ["youtube", "video editing", "animation"],
+        "tags": ["youtube", "video-editing", "animation"],
         "title": "Teetawarn Co.",
         "description": [
             "My passion project in 2020-2022. A Youtube animation channel that tells the story of Teetawarn and his adventures.",
