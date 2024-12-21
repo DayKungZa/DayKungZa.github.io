@@ -1,70 +1,67 @@
 {
     "project": [
-        {
-            "id": "robotsim",
-            "imgSrc": "projects/robotsim_profile1.png",
-            "altText": "Screenshot of Robot Simulation Tutorial",
-            "tags": ["web dev", "game dev", "robotics", "unity", "c#", "html/css"],
-            "title": "Robot Simulation Tutorial on Web",
-            "description": [
-                "<b>Silver Prize in Oral Presentation, SCiUS Forum 13th</b>",
-                "Robot Sim is a project that teaches the mechanics of mobile robot and arm robot with a game-like tutorial made in Unity, embedded into the website.",
-                "Website is available to play on PC."
-            ],
-            "buttons": [
-                {
-                    "buttonText": "Play Robot Sim",
-                    "buttonLink": "https://daykungza.github.io/RobotSim/"
-                }
-            ]
-        },
-        {
-            "id": "sudog",
-            "imgSrc": "projects/sudog.png",
-            "altText": "Photo of Sudog Rescue Robot",
-            "tags": ["robotics", "python"],
-            "title": "Sudog the Rescue Robot",
-            "description": [
-                "<b>Top 10 Score, MUT RMRC Robocup 2022</b>",
-                "Sudog is like a father to Robot Sim project. It is a rescue robot capable of advancing rough terrains, picking up objects with arms, and detecting warning signs using YOLOv5.",
-                "It is controlled via 5G Wi-Fi using Raspberry Pi 4 as the main computer and pygame as the controller."
-            ],
-            "buttons": []
-        },
-        { 
-            "id": "review",
-            "imgSrc": "projects/review.png",
-            "altText": "Screenshot of Day Reviews website",
-            "tags": ["web dev", "html/css", "js", "marked.js"],
-            "title": "Day Reviews",
-            "description": [
-                "I like to review games, movies, shows, and other stuff so these are the websites for my reviews. Using marked.js with markdown and JSON files to store and fetch data of my reviews."
-            ],
-            "buttons": [
-                {
-                    "buttonText": "Games and Movies Review",
-                    "buttonLink": "https://daykungza.github.io/reviews/"
-                },
-                {
-                    "buttonText": "CEDT Review",
-                    "buttonLink": "https://daykungza.github.io/CEDTReview/"
-                }
-            ]
-        },{ 
-            "id": "fireemblem",
-            "imgSrc": "projects/fireemblem.png",
-            "altText": "Fire Emblem Echoes Screenshot",
-            "tags": ["python", "monte carlo", "data analysis"],
-            "title": "Day Reviews",
-            "description": [
-                "This project uses Monte Carlo simulations to analyze battle mechanics in Fire Emblem Echoes. Simulating battles based on character statistics, to find the best character classes and strategies."
-            ],
-            "buttons": [
-                {
-                    "buttonText": "View Project",
-                    "buttonLink": "https://github.com/DayKungZa/FireEmblemProject"
-                }
-            ]
-        }
-    ]
+    {
+        "id": "robotsim",
+        "imgSrc": "projects/robotsim_profile1.png",
+        "altText": "Screenshot of Robot Simulation Tutorial",
+        "tags": ["web dev", "game dev", "robotics", "unity", "c#", "html/css"],
+        "title": "Robot Simulation Tutorial on Web",
+        "description": [
+            "<b>Silver Prize in Oral Presentation, SCiUS Forum 13th</b>",
+            "Robot Sim is a project that teaches the mechanics of mobile robot and arm robot with a game-like tutorial made in Unity, embedded into the website.",
+            "Website is available to play on PC."
+        ],
+        "buttons": [
+            {
+                "buttonText": "Play Robot Sim",
+                "buttonLink": "https://daykungza.github.io/RobotSim/"
+            }
+        ]
+    },{
+        "id": "sudog",
+        "imgSrc": "projects/sudog.png",
+        "altText": "Photo of Sudog Rescue Robot",
+        "tags": ["robotics", "python"],
+        "title": "Sudog the Rescue Robot",
+        "description": [
+            "<b>Top 10 Score, MUT RMRC Robocup 2022</b>",
+            "Sudog is like a father to Robot Sim project. It is a rescue robot capable of advancing rough terrains, picking up objects with arms, and detecting warning signs using YOLOv5.",
+            "It is controlled via 5G Wi-Fi using Raspberry Pi 4 as the main computer and pygame as the controller."
+        ],
+        "buttons": []
+    },{ 
+        "id": "review",
+        "imgSrc": "projects/review.png",
+        "altText": "Screenshot of Day Reviews website",
+        "tags": ["web dev", "html/css", "js", "marked.js"],
+        "title": "Day Reviews",
+        "description": [
+            "I like to review games, movies, shows, and other stuff so these are the websites for my reviews. Using marked.js with markdown and JSON files to store and fetch data of my reviews."
+        ],
+        "buttons": [
+            {
+                "buttonText": "Games and Movies Review",
+                "buttonLink": "https://daykungza.github.io/reviews/"
+            },
+            {
+                "buttonText": "CEDT Review",
+                "buttonLink": "https://daykungza.github.io/CEDTReview/"
+            }
+        ]
+    },{ 
+        "id": "fireemblem",
+        "imgSrc": "projects/fireemblem.png",
+        "altText": "Fire Emblem Echoes Screenshot",
+        "tags": ["python", "monte carlo", "data analysis"],
+        "title": "Day Reviews",
+        "description": [
+            "This project uses Monte Carlo simulations to analyze battle mechanics in Fire Emblem Echoes. Simulating battles based on character statistics, to find the best character classes and strategies."
+        ],
+        "buttons": [
+            {
+                "buttonText": "View Project",
+                "buttonLink": "https://github.com/DayKungZa/FireEmblemProject"
+            }
+        ]
+    }]
 }

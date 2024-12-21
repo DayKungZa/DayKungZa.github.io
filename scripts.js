@@ -14,6 +14,7 @@ async function loadProject() {
   let projectHTML = '';
 
   data.project.forEach((proj) => {
+    console.log(proj.id);
     projectHTML += `<div class="project-section" id="${proj.id}">`;
     projectHTML += `<img src="${proj.imgSrc}" alt="${proj.altText}" class="project-image">`;
     projectHTML += `<div class="project-text">`;
