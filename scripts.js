@@ -1,4 +1,4 @@
-const projectList = "https://raw.githubusercontent.com/DayKungZa/DayKungZa.github.io/refs/heads/main/projectList";
+const projectList = "https://raw.githubusercontent.com/DayKungZa/DayKungZa.github.io/refs/heads/main/projectList.json";
 
 async function initProjects() {
   let projectText = await loadProject();
