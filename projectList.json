@@ -112,6 +112,16 @@
             }
         ]
     },{ 
+        "id": "octoflippers",
+        "imgSrc": "projects/octoflippers.png",
+        "altText": "Game Screenshot",
+        "tags": ["game dev", "godot", "gdscript"],
+        "title": "Octo Flippers",
+        "description": [
+            "a 2D platformer game feturing an octopus with an ability to flip and change skills, currently under development in Godot."
+        ],
+        "buttons": []
+    },{ 
         "id": "Teetawarn",
         "imgSrc": "projects/teetawarn.png",
         "altText": "Youtube Channel Screenshot",
