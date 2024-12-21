@@ -25,12 +25,13 @@ async function loadProject() {
     });
     projectHTML += `</div>`;
 
+    //text section
     projectHTML += `<h2 class="text-2xl font-bold py-5">${proj.title}</h2>`;
-
     proj.description.forEach((desc) => {
       projectHTML += `<p>${desc}</p>`;
     });
 
+    //buttons
     projectHTML += `<div class="flex flex-wrap">`;
     proj.buttons.forEach((button) => {
       projectHTML += `<a href="${button.buttonLink}" class="w-5/10 bg-black text-white p-2 my-4 mr-4 text-lg transition-colors duration-300 hover:bg-blue-500" target="_blank">${button.buttonText}</a>`;
@@ -43,5 +44,5 @@ async function loadProject() {
   return projectHTML;
 }
 
-
 initProjects();
+

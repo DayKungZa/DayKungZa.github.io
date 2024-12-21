@@ -50,6 +50,21 @@
                     "buttonLink": "https://daykungza.github.io/CEDTReview/"
                 }
             ]
+        },{ 
+            "id": "fireemblem",
+            "imgSrc": "projects/fireemblem.png",
+            "altText": "Fire Emblem Echoes Screenshot",
+            "tags": ["python", "monte carlo", "data analysis"],
+            "title": "Day Reviews",
+            "description": [
+                "This project uses Monte Carlo simulations to analyze battle mechanics in Fire Emblem Echoes. Simulating battles based on character statistics, to find the best character classes and strategies."
+            ],
+            "buttons": [
+                {
+                    "buttonText": "View Project",
+                    "buttonLink": "https://github.com/DayKungZa/FireEmblemProject"
+                }
+            ]
         }
     ]
 }
