@@ -53,9 +53,9 @@
         "imgSrc": "projects/fireemblem.png",
         "altText": "Fire Emblem Echoes Screenshot",
         "tags": ["python", "monte carlo", "data analysis"],
-        "title": "Day Reviews",
+        "title": "Fire Emblem Project",
         "description": [
-            "This project uses Monte Carlo simulations to analyze battle mechanics in Fire Emblem Echoes. Simulating battles based on character statistics, to find the best character classes and strategies."
+            "This project uses Monte Carlo simulations to analyze battle mechanics in Fire Emblem Echoes. Simulating battles based on character statistics, to find the best character and classes."
         ],
         "buttons": [
             {
@@ -63,5 +63,26 @@
                 "buttonLink": "https://github.com/DayKungZa/FireEmblemProject"
             }
         ]
-    }]
+    },{ 
+        "id": "cpu",
+        "imgSrc": "projects/cpu.png",
+        "altText": "CPU Screenshot",
+        "tags": ["digital"],
+        "title": "CPU Project",
+        "description": [
+            "This project uses digital simulation to create a simple CPU with 8-bit architecture. The CPU is capable of executing basic arithmetic, logic, and memory operations."
+        ],
+        "buttons": [
+            {
+                "buttonText": "View Project",
+                "buttonLink": "https://github.com/DayKungZa/CPUdigital"
+            },{
+                "buttonText": "View Documents",
+                "buttonLink": "https://docs.google.com/document/d/1frzvz1W985muGhxWg73ivgIAw2roBIeKNfe4nc0y7oA/edit?usp=sharing"
+            }
+        ]
+    }
+
+
+]
 }
