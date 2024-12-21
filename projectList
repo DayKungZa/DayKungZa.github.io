@@ -77,8 +77,53 @@
                 "buttonText": "View Project",
                 "buttonLink": "https://github.com/DayKungZa/CPUdigital"
             },{
-                "buttonText": "View Documents",
+                "buttonText": "View Documentation",
                 "buttonLink": "https://docs.google.com/document/d/1frzvz1W985muGhxWg73ivgIAw2roBIeKNfe4nc0y7oA/edit?usp=sharing"
+            }
+        ]
+    },{ 
+        "id": "bullethell",
+        "imgSrc": "projects/bullethell.png",
+        "altText": "Game Screenshot",
+        "tags": ["game dev", "unity", "c#"],
+        "title": "Bullet-hell Farming",
+        "description": [
+            "a short farming game combined with bullet hell features, developed in Unity."
+        ],
+        "buttons": [
+            {
+                "buttonText": "Play Game",
+                "buttonLink": "https://daykungza.itch.io/bullethellfarming"
+            }
+        ]
+    },{ 
+        "id": "marioparty",
+        "imgSrc": "projects/marioparty.png",
+        "altText": "Game Screenshot",
+        "tags": ["game dev", "c++"],
+        "title": "Mario Party in C",
+        "description": [
+            "Recreating Mario Party game in C language, using only standard library and terminal."
+        ],
+        "buttons": [
+            {
+                "buttonText": "Source Code and Documentation",
+                "buttonLink": "https://github.com/DayKungZa/mariopartyc"
+            }
+        ]
+    },{ 
+        "id": "marioparty",
+        "imgSrc": "projects/marioparty.png",
+        "altText": "Game Screenshot",
+        "tags": ["game dev", "c++"],
+        "title": "Mario Party in C",
+        "description": [
+            "Recreating Mario Party game in C language, using only standard library and played in terminal."
+        ],
+        "buttons": [
+            {
+                "buttonText": "Source Code and Documentation",
+                "buttonLink": "https://github.com/DayKungZa/mariopartyc"
             }
         ]
     }
