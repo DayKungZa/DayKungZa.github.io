@@ -1,0 +1,47 @@
+{
+    "project": [{
+        "id": "robotsim",
+        "imgSrc": "projects/robotsim_profile1.png",
+        "altText": "robot sim",
+        "tags": ["Web Dev", "Game Dev", "Robotics", "Unity", "C#", "HTML/CSS"],
+        "title": "Robot Simulation Tutorial on Web",
+        "description": [
+            "<b>Silver Prize in Oral Presentation, SCiUS Forum 13th</b>",
+            "Robot Sim is a project that teaches the mechanics of mobile robot and arm robot with a game-like tutorial made in Unity, embedded into the website.",
+            "Website is available to play on PC."
+        ],
+        "buttons": [{
+            "buttonText": "Play Robot Sim",
+            "buttonLink": "https://daykungza.github.io/RobotSim/"
+        }]
+    },
+    {
+        "id": "sudog",
+        "imgSrc": "projects/sudog.png",
+        "altText": "sudog",
+        "tags": ["Robotics", "python"],
+        "title": "Sudog the Rescue Robot",
+        "description": [
+            "<b>Top 10 Score, MUT RMRC Robocup 2022</b>",
+            "Sudog is like a father to Robot Sim project. It is a rescue robot capable of advancing rough terrains, picking up objects with arms, and detect warning signs using YOLOv5.",
+            "It is controlled via 5G wifi using Raspberry Pi 4 as the main computer and pygame as the controller."
+        ]
+    },
+    {
+        "id": "review",
+        "imgSrc": "projects/review.png",
+        "altText": "review",
+        "tags": ["Web Dev", "HTML/CSS", "JS", "marked.js"],
+        "title": "Day Reviews",
+        "description": [
+            "I like to review games, movies, shows and other stuff so these are the websites for my reviews. Using marked.js with markdown and json files to store and fetch data of my reviews."
+        ],
+        "buttons": [{
+            "buttonText": "Games and Movies Review",
+            "buttonLink": "https://daykungza.github.io/reviews/"
+        },{
+            "buttonText": "CEDT Review",
+            "buttonLink": "https://daykungza.github.io/CEDTReview/"
+        }]
+    }]
+}
