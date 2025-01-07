@@ -33,7 +33,7 @@
         "id": "review",
         "imgSrc": "projects/review.png",
         "altText": "Screenshot of Day Reviews website",
-        "tags": ["web-dev", "html-css", "js", "marked.js"],
+        "tags": ["web-dev", "html-css", "js"],
         "title": "Day Reviews",
         "description": [
             "I like to review games, movies, shows, and other stuff so these are the websites for my reviews. Using marked.js with markdown and JSON files to store and fetch data of my reviews."
@@ -115,7 +115,7 @@
         "id": "octoflippers",
         "imgSrc": "projects/octoflippers.png",
         "altText": "Game Screenshot",
-        "tags": ["game-dev", "godot", "gdscript", "animation"],
+        "tags": ["game-dev", "godot", "animation"],
         "title": "Octo Flippers",
         "description": [
             "a 2D platformer game feturing an octopus with an ability to flip and change skills, currently under development in Godot."
