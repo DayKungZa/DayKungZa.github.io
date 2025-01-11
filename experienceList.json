@@ -2,17 +2,17 @@
     "experiences": [
     {
         "id": "yyy",
-        "imgSrc": "exp/yyy.png",
+        "imgSrc": "exp/yyy.jpg",
         "altText": "yyy",
         "title": "Head of Activities",
         "company": "YoungYouthYou, Antioch Baptish Chruch",
         "time": "January 2025 - Present",
         "description": [
-            "Organized and led activities for the youth group of Antioch Baptist Church. Activities include applied bible studies, games, activities, outings, and community service projects."
+            "Organized and led activities for the youth group of Antioch Baptist Church. Activities include applied bible study classes, afternoon activities, special outings, and community service projects."
         ]
     },{
         "id": "tutor",
-        "imgSrc": "exp/tutor.png",
+        "imgSrc": "exp/tutor.jpg",
         "altText": "tutor",
         "title": "Math Tutor",
         "company": "Freelance",
