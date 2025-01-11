@@ -1,6 +1,16 @@
 {
     "experiences": [
     {
+        "id": "yyy",
+        "imgSrc": "exp/yyy.png",
+        "altText": "yyy",
+        "title": "Head of Activities",
+        "company": "YoungYouthYou, Antioch Baptish Chruch",
+        "time": "January 2025 - Present",
+        "description": [
+            "Organized and led activities for the youth group of Antioch Baptist Church. Activities include applied bible studies, games, activities, outings, and community service projects."
+        ]
+    },{
         "id": "tutor",
         "imgSrc": "exp/tutor.png",
         "altText": "tutor",

@@ -28,7 +28,12 @@
             "Sudog is like a father to Robot Sim project. It is a rescue robot capable of advancing rough terrains, picking up objects with arms, and detecting warning signs using YOLOv5.",
             "It is controlled via 5G Wi-Fi using Raspberry Pi 4 as the main computer and pygame as the controller."
         ],
-        "buttons": []
+        "buttons": [
+            {
+                "buttonText": "View Project",
+                "buttonLink": "https://github.com/DayKungZa/Sudog"
+            }
+        ]
     },{ 
         "id": "review",
         "imgSrc": "projects/review.png",
