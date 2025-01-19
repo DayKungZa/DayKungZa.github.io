@@ -43,6 +43,8 @@ const Home = () => {
                     My Other Links
                 </a>
                 <br />
+                
+                <p>--this website is made by vite + react--</p>
             </div>
         </>
     );
