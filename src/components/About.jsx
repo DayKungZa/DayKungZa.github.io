@@ -3,20 +3,82 @@ import React from 'react';
 const About = () => {
     return (
         <>
-            <h1>Contact</h1>
+            <h1 className="text-2xl font-bold my-4">Contact</h1>
 
-            <div class="project-section">
-                <img src="./src/image/Day3.jpg" alt="day" class="profile-image" />
-                <div class="project-text mx-5">
-                    <h2 class="font-bold text-xl"> Tawan Jitroongruangnij (Day) </h2>
-                    <br/>Computer Engineering and Digital Technology Student
-                    <br/>Faculty of Engineering, Chulalongkorn University
-                    <br/>
-                    <br/>Email: tawanday2006@gmail.com
-                    <br/>Phone: (+66)95-883-1013
-                    <a href="https://www.facebook.com/daeday.jirroongruangnij/" class="button mx-0" target="_blank"> Facebook </a>
-                    <a href="https://www.instagram.com/daykungza/" class="button mx-0" target="_blank"> Instagram </a>
-                    <a href="https://linktr.ee/DayKungZa" class="button mx-0" target="_blank"> LinkTree </a>
+            <div className="flex items-center my-4">
+                <img
+                    src="./src/image/Day3.jpg"
+                    alt="day"
+                    className="w-24 h-24 rounded-full"
+                />
+                <div className="mx-5">
+                    <h2 className="font-bold text-xl">Tawan Jitroongruangnij (Day)</h2>
+                    <p>Computer Engineering and Digital Technology Student</p>
+                    <p>Faculty of Engineering, Chulalongkorn University</p>
+                    <p className="mt-2">Email: tawanday2006@gmail.com</p>
+                    <p>Phone: (+66)95-883-1013</p>
+                    <div className="mt-2">
+                        <a
+                            href="https://www.facebook.com/daeday.jirroongruangnij/"
+                            className="bg-blue-500 text-white px-3 py-1 rounded mx-1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Facebook
+                        </a>
+                        <a
+                            href="https://www.instagram.com/daykungza/"
+                            className="bg-pink-500 text-white px-3 py-1 rounded mx-1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Instagram
+                        </a>
+                        <a
+                            href="https://linktr.ee/DayKungZa"
+                            className="bg-gray-800 text-white px-3 py-1 rounded mx-1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkTree
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex items-center my-4">
+                <div className="mx-5">
+                    <h2 className="font-bold text-xl">Education</h2>
+                    <p>Computer Engineering and Digital Technology Student</p>
+                    <p>Faculty of Engineering, Chulalongkorn University</p>
+                    <p className="mt-2">Email: tawanday2006@gmail.com</p>
+                    <p>Phone: (+66)95-883-1013</p>
+                    <div className="mt-2">
+                        <a
+                            href="https://www.facebook.com/daeday.jirroongruangnij/"
+                            className="bg-blue-500 text-white px-3 py-1 rounded mx-1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Facebook
+                        </a>
+                        <a
+                            href="https://www.instagram.com/daykungza/"
+                            className="bg-pink-500 text-white px-3 py-1 rounded mx-1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Instagram
+                        </a>
+                        <a
+                            href="https://linktr.ee/DayKungZa"
+                            className="bg-gray-800 text-white px-3 py-1 rounded mx-1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkTree
+                        </a>
+                    </div>
                 </div>
             </div>
         </>
