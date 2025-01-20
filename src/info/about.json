@@ -1,0 +1,34 @@
+{
+    "aboutData": [
+        {
+            "image": "./src/image/Day3.jpg",
+            "closedTexts": [
+                "Tawan Jitroongruangnij (Day)",
+                "[click for contact]"
+            ],
+            "expandTexts": [
+                "Tawan Jitroongruangnij (Day)",
+                "Email: tawanday2006@gmail.com",
+                "Phone: (+66)95-883-1013",
+                "LineID: tawan_day"
+            ],
+            "links": [
+                {
+                    "text": "Facebook",
+                    "url": "https://www.facebook.com/daeday.jirroongruangnij/",
+                    "color": "bg-blue-500"
+                },
+                {
+                    "text": "Instagram",
+                    "url": "https://www.instagram.com/daykungza/",
+                    "color": "bg-pink-500"
+                },
+                {
+                    "text": "LinkedIn",
+                    "url": "https://www.linkedin.com/in/tawan-jitroongruangnij-112646330/",
+                    "color": "bg-gray-800"
+                }
+            ]
+        }
+    ]
+}

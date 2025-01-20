@@ -3,6 +3,7 @@ import React from 'react';
 const Home = () => {
     return (
         <>
+            <h1 className="text-center text-2xl font-bold my-4">Home</h1>
             <div className="w-full py-4 text-center" id="robot-sim">
                 <img
                     src="./src/image/Day3.jpg"

@@ -5,7 +5,6 @@ import Home from './components/Home.jsx';
 import Project from './components/Project.jsx';
 import Experience from './components/Experience.jsx';
 import About from './components/About.jsx';
-import './styles.css';
 
 const App = () => {
     return (
