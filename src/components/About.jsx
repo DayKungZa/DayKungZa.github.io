@@ -1,70 +1,72 @@
 import React, {useState} from 'react';
 
+import aboutData from "../info/about.json"; // Import JSON file
+
 const About = () => {
-    const [isExpanded, setIsExpanded] = useState(false);
+    // Track expanded state for each block
+    const [expandedBlocks, setExpandedBlocks] = useState({});
+
+    const toggleExpand = (index) => {
+        setExpandedBlocks((prev) => ({
+            ...prev,
+            [index]: !prev[index] // Toggle the state for the specific block
+        }));
+    };
 
     return (
-        <>
+        <div>
             <h1 className="text-center text-2xl font-bold my-4">About Me</h1>
 
-            <div
-                className={`rounded-md border-slate-50 border-2 flex items-center p-5 my-4
-                            hover:border-black ${isExpanded ? "hover:bg-white" : "hover:bg-blue-100"}
-                            transition-all duration-300 ease-in-out`}
-                onClick={()=>setIsExpanded(!isExpanded)}
-            >
-                <img
-                    src="./src/image/Day3.jpg"
-                    alt="day"
-                    className="w-40 h-40 rounded-full"
-                />
-                <div className="mx-5 px-3">
-                    {!isExpanded && (
-                        <div>
-                            <h2 className="font-bold text-xl">Tawan Jitroongruangnij (Day)</h2>
-                            <p>[click for contact]</p>
-                        </div>
-                    )}
-                    {isExpanded && (
-                        <div>
-                            <p>Tawan Jitroongruangnij (Day)</p>
-                            <p>Email: tawanday2006@gmail.com</p>
-                            <p>Phone: (+66)95-883-1013</p>
-                            <p>LineID: tawan_day</p>
-                            <div className="mt-2">
-                                <a
-                                    href="https://www.facebook.com/daeday.jirroongruangnij/"
-                                    className="bg-blue-500 text-white px-3 py-1 rounded mx-1
-                                            hover:bg-opacity-80 transition-all duration-300 ease-in-out"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Facebook
-                                </a>
-                                <a
-                                    href="https://www.instagram.com/daykungza/"
-                                    className="bg-pink-500 text-white px-3 py-1 rounded mx-1
-                                            hover:bg-opacity-80 transition-all duration-300 ease-in-out"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Instagram
-                                </a>
-                                <a
-                                    href="https://www.linkedin.com/in/tawan-jitroongruangnij-112646330/"
-                                    className="bg-gray-800 text-white px-3 py-1 rounded mx-1
-                                            hover:bg-opacity-80 transition-all duration-300 ease-in-out"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    LinkedIn
-                                </a>
+            {aboutData.aboutText.map((entry, index) => (
+                <div
+                    key={index}
+                    className={`rounded-md border-slate-50 border-2 flex items-center p-5 my-4
+                                cursor-pointer hover:border-black ${
+                                    expandedBlocks[index]
+                                        ? "hover:bg-white"
+                                        : "hover:bg-blue-100"
+                                } transition-all duration-300 ease-in-out`}
+                    onClick={() => toggleExpand(index)}
+                >
+                    <img
+                        src={entry.image}
+                        alt={`About ${index}`}
+                        className="w-40 h-40 rounded-full"
+                    />
+                    <div className="mx-5 px-3">
+                        {!expandedBlocks[index] && (
+                            <div>
+                                <h2 className="font-bold text-xl">
+                                    {entry.closedTexts[0]}
+                                </h2>
+                                <p>{entry.closedTexts[1]}</p>
                             </div>
-                        </div>
-                    )}
+                        )}
+                        {expandedBlocks[index] && (
+                            <div>
+                                {entry.expandTexts.map((text, i) => (
+                                    <p key={i}>{text}</p>
+                                ))}
+                                <div className="mt-2">
+                                    {entry.links.map((link, i) => (
+                                        <a
+                                            key={i}
+                                            href={link.url}
+                                            className={`${link.color} text-white px-3 py-1 rounded mx-1
+                                                        hover:bg-opacity-80 transition-all duration-300 ease-in-out`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {link.text}
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                    </div>
                 </div>
-            </div>
-        </>
+            ))}
+        </div>
     );
 };
 

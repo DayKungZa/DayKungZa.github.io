@@ -1,5 +1,5 @@
 {
-    "aboutData": [
+    "aboutText": [
         {
             "image": "./src/image/Day3.jpg",
             "closedTexts": [
@@ -27,6 +27,24 @@
                     "text": "LinkedIn",
                     "url": "https://www.linkedin.com/in/tawan-jitroongruangnij-112646330/",
                     "color": "bg-gray-800"
+                }
+            ]
+        },{
+            "image": "./src/image/esc.png",
+            "closedTexts": [
+                "Education",
+                "Darunsikkhalai Science School"
+            ],
+            "expandTexts": [
+                "Darunsikkhalai Science School (SCiUS Program)",
+                "2021-2024 / Grade 10-12",
+                "GPAX: 3.93"
+            ],
+            "links": [
+                {
+                    "text": "School Website",
+                    "url": "https://www.kmutt.ac.th/education/curriculum/esc-kmutt/",
+                    "color": "bg-black"
                 }
             ]
         }
