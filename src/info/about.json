@@ -16,18 +16,30 @@
                 {
                     "text": "Facebook",
                     "url": "https://www.facebook.com/daeday.jirroongruangnij/",
-                    "color": "bg-blue-500"
+                    "color": "bg-blue-400"
                 },
                 {
                     "text": "Instagram",
                     "url": "https://www.instagram.com/daykungza/",
-                    "color": "bg-pink-500"
+                    "color": "bg-pink-400"
                 },
                 {
                     "text": "LinkedIn",
                     "url": "https://www.linkedin.com/in/tawan-jitroongruangnij-112646330/",
-                    "color": "bg-gray-800"
+                    "color": "bg-gray-700"
                 }
+            ]
+        },{
+            "image": "./src/image/chula.png",
+            "closedTexts": [
+                "Education",
+                "Chulalongkorn University"
+            ],
+            "expandTexts": [
+                "Chulalongkorn University",
+                "Faculty of Engineering",
+                "Computer Engineering and Digital Technology",
+                "Since 2024 / Currently First Year"
             ]
         },{
             "image": "./src/image/esc.png",
@@ -39,13 +51,6 @@
                 "Darunsikkhalai Science School (SCiUS Program)",
                 "2021-2024 / Grade 10-12",
                 "GPAX: 3.93"
-            ],
-            "links": [
-                {
-                    "text": "School Website",
-                    "url": "https://www.kmutt.ac.th/education/curriculum/esc-kmutt/",
-                    "color": "bg-black"
-                }
             ]
         }
     ]

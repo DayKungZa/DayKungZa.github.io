@@ -25,7 +25,7 @@ const About = () => {
                                     expandedBlocks[index]
                                         ? "hover:bg-white"
                                         : "hover:bg-blue-100"
-                                } transition-all duration-300 ease-in-out`}
+                                } transition-all duration-300 ease-in-out w-150 h-50`}
                     onClick={() => toggleExpand(index)}
                 >
                     <img
@@ -47,20 +47,22 @@ const About = () => {
                                 {entry.expandTexts.map((text, i) => (
                                     <p key={i}>{text}</p>
                                 ))}
-                                <div className="mt-2">
-                                    {entry.links.map((link, i) => (
-                                        <a
-                                            key={i}
-                                            href={link.url}
-                                            className={`${link.color} text-white px-3 py-1 rounded mx-1
-                                                        hover:bg-opacity-80 transition-all duration-300 ease-in-out`}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            {link.text}
-                                        </a>
-                                    ))}
-                                </div>
+                                {entry.links && (
+                                    <div className="mt-2">
+                                        {entry.links.map((link, i) => (
+                                            <a
+                                                key={i}
+                                                href={link.url}
+                                                className={`${link.color} text-white px-3 py-1 rounded mx-1
+                                                            hover:bg-opacity-80 transition-all duration-300 ease-in-out`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                {link.text}
+                                            </a>
+                                        ))}
+                                    </div>
+                                )}  
                             </div>
                         )}
                     </div>
