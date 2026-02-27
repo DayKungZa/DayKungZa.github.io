@@ -1,6 +1,26 @@
 {
     "experiences": [
     {
+        "id": "cedt",
+        "imgSrc": "exp/cedt.jpg",
+        "altText": "cedt",
+        "title": "Student Committee, External Affairs",
+        "company": "CEDT Core Team",
+        "time": "April 2025 - Present",
+        "description": [
+            "Managed and lead teams of people as head of activities. Organized recreational activity sections including activity booths, gameshow, academic showcase, and sports in various faculty events."
+        ]
+    },{
+        "id": "ta",
+        "imgSrc": "exp/ta.jpg",
+        "altText": "ta",
+        "title": "Teaching Assistant",
+        "company": "Department of Computer Engineering, Chulalongkorn University",
+        "time": "August 2025 - December 2025",
+        "description": [
+            "Teaching assistant in Computer Programming, Data Structures, and Algorithm for Computer Engineering students in Chulalongkorn University."
+        ]
+    },{
         "id": "yyy",
         "imgSrc": "exp/yyy.jpg",
         "altText": "yyy",
