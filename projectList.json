@@ -1,6 +1,55 @@
 {
     "project": [
     {
+        "id": "icpc",
+        "imgSrc": "projects/icpc.png",
+        "altText": "icpc",
+        "tags": ["web-dev", "astro.js"],
+        "title": "ICPC Bangkok Regional 2025 Website",
+        "description": [
+            "Manage a team and co-developed an information frontend website for the ICPC competition using Astro.js and hosted on Chula’s server. "
+        ],
+        "buttons": [
+            {
+                "buttonText": "Visit ICPC Website",
+                "buttonLink": "https://icpc.cp.eng.chula.ac.th"
+            }
+        ]
+    },{
+        "id": "larngear",
+        "imgSrc": "projects/larngear.png",
+        "altText": "larngear",
+        "tags": ["web-dev", "next.js", "express.js", "gemini-api"],
+        "title": "Sadud Larngear",
+        "description": [
+            "A project made for Thinc Hackathon, a website that uses superstitious beliefs of engineering students to help find love skipping at Larngear, based on statistics. Using Gemini API to make a horoscope chatbot."
+        ],
+        "buttons": [
+            {
+                "buttonText": "Pitching Slides",
+                "buttonLink": "https://www.canva.com/design/DAGiMH96kec/YVhn3Fv5MHMEYKUyW1pMhg/edit?utm_content=DAGiMH96kec&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            },
+            {
+                "buttonText": "Sadud Larngear Website (currently down)",
+                "buttonLink": "https://sadud-larngear.vercel.app/"
+            }
+        ]
+    },{
+        "id": "meth",
+        "imgSrc": "projects/meth.png",
+        "altText": "meth",
+        "tags": ["game-dev", "java", "JavaFX"],
+        "title": "Meth Emblem",
+        "description": [
+            "Developed a grid-based strategy game featuring BFS pathfinding, complex combat statistics, and persistent unit management based on Fire Emblem series."
+        ],
+        "buttons": [
+            {
+                "buttonText": "Github",
+                "buttonLink": "https://github.com/DayKungZa/Meth-Emblem"
+            }
+        ]
+    },{
         "id": "robotsim",
         "imgSrc": "projects/robotsim_profile1.png",
         "altText": "Screenshot of Robot Simulation Tutorial",
